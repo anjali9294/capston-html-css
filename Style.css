@@ -1,0 +1,663 @@
+:root {
+  font-family: "Poppins";
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #ffffff;
+  --primary-color: #1c0a00;
+  --secondrey-color: #361500;
+  --light-color: #603601;
+  --ligher-color: #453e34;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--ligher-color);
+  color: white;
+  width: 100%;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  color: #ffffff;
+}
+
+body {
+  margin: 0px !important;
+  background-color: var(--ligher-color);
+  border: 1px solid #ddd;
+}
+
+.source-content,
+nav,
+.main-content {
+  padding: 0 4%;
+}
+
+nav {
+  /* background-color: var(--primary-color); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 14px 32px;
+  transition: all 0.6s ease-in;
+  margin: 0 2px;
+}
+
+nav ul li:hover {
+  background-color: var(--light-color);
+}
+
+nav ul li.active {
+  background-color: var(--light-color);
+}
+
+.main-section {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+
+.main-section .ourcafe,
+.main-section .the-source {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 49%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  transition: all 0.5s ease-in;
+}
+
+.main-section .ourcafe {
+  background-image: url(./images/our-cafe.jpg);
+  background-position: top right;
+}
+
+.main-section .ourcafe:hover,
+.main-section .the-source:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.main-section .the-source {
+  background-image: url(./images/the-Source.jpg);
+}
+
+.maintext {
+  font-size: 18px;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintext p {
+  width: 65%;
+}
+
+/* our cafe */
+.ourcafe-head,
+.source-head,
+.classic-coffee-img,
+.uniqe-coffee-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourcafe-img,
+.source-img,
+.coffee-blends-img,
+.LearnWithUs-img,
+.Contact-img,
+.BrewingEquipment-head-img,
+.AboutUs-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+}
+
+.ourcafe-img {
+  background-image: url(./images/ourcafe-page.jpg);
+  background-position: center center;
+}
+
+.address-cards {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+.address-cards .card {
+  width: 28rem;
+  height: 17rem;
+  transition: all 0.25s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 1rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.address-cards .card:hover {
+  transform: scale(0.95);
+}
+
+.card-1 {
+  background-image: url(./images/ourcafe-1.jpg);
+}
+
+.card-2 {
+  background-image: url(./images/ourcafe-2.jpg);
+}
+
+.card-3 {
+  background-image: url(./images/ourcafe-3.jpg);
+}
+
+.card-4 {
+  background-image: url(./images/ourcafe-4.jpg);
+}
+
+/* source */
+.source-img {
+  background-image: url(./images/the-source-page.jpg);
+  background-position: center bottom;
+}
+
+/* coffee blends */
+.coffee-blends {
+  margin: 0 4%;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  padding: 4rem;
+}
+
+.coffee-blends-img {
+  background-image: url(./images/coffee-blend.jpg);
+  background-position: bottom right;
+}
+
+.classic-coffee-blend {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.classic-coffee-img,
+.uniqe-coffee-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.classic-coffee-blend .classic-coffee-img {
+  background-image: url(./images/classic-coffee-blend.jpg);
+  background-position: bottomright;
+  transition: all 0.5s ease-in;
+}
+
+.classic-coffee-blend .classic-coffee-img:hover {
+  transform: scale(0.95);
+  opacity: 0.4;
+}
+
+.classic-coffee-blend p,
+.unique-coffee-blend p {
+  padding: 0.5rem 2.5rem;
+}
+
+.unique-coffee-blend {
+  flex: 1;
+  margin: 0.5rem;
+}
+
+.unique-coffee-blend .uniqe-coffee-img {
+  background-image: url(./images/uniqe-coffe-blends.jpg);
+  transition: all 0.5s ease-in;
+}
+
+.unique-coffee-blend .uniqe-coffee-img:hover {
+  transform: scale(0.95);
+  opacity: 0.4;
+}
+
+.Classic-coffee-blends {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.classic-card {
+  height: 550px;
+  width: 400px;
+  margin-top: 1rem;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  margin: 1rem 3rem;
+  background-color: var(--secondrey-color);
+  transition: all 0.5s ease-in;
+}
+
+.classic-card:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+.classic-images {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+  width: 400px;
+}
+
+.classic-card .classic-card-img-1 {
+  background-image: url(./images/Classics/UpAndAdam.jpg);
+}
+
+.classic-card-img-2 {
+  background-image: url(./images/Classics/Decaf.jpg);
+}
+
+.classic-card-img-3 {
+  background-image: url(./images/Classics/HazelnutGold.jpg);
+}
+
+.classic-card-img-4 {
+  background-image: url(./images/Classics/EspressoMinor.jpg);
+}
+
+.classic-card .classic-card-name {
+  margin: 0;
+  font-weight: 500;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.classic-card .classic-card-desc {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0.2rem 1rem 0 1rem;
+}
+
+.classic-card .classic-card-buttons {
+  text-align: end;
+  margin-top: 0.5rem;
+}
+
+.classic-card-buttons button {
+  padding: 0.5rem 3rem;
+  margin: 0 1rem;
+  background-color: #453e34;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.classic-card-buttons button:hover {
+  background-color: var(--light-color);
+}
+
+/* uniuqe coffee blends */
+
+.unique-images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
+  width: 400px;
+}
+
+.unique-card-img-1 {
+  background-image: url(./images/UniqueBlends/WakeCup_Arabica.jpg);
+}
+
+.unique-card-img-2 {
+  background-image: url(./images/UniqueBlends/Robusta.jpg);
+}
+
+.unique-card-img-3 {
+  background-image: url(./images/UniqueBlends/NuttyBrazil.jpg);
+}
+
+.unique-card-img-4 {
+  background-image: url(./images/UniqueBlends/EthiopianGrand.jpg);
+}
+
+.unique-card-img-5 {
+  background-image: url(./images/UniqueBlends/KLEstate.jpg);
+}
+
+.unique-card-img-6 {
+  background-image: url(./images/UniqueBlends/The1980Blend.jpg);
+}
+
+.unique-card {
+  height: 630px;
+}
+
+.unique-card h5 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+/* brewing equipment */
+.equpment-card {
+  height: 550px !important;
+}
+.BrewingEquipment-head-img {
+  background-image: url(./images/Brewing-equipment-head-img.jpg);
+  background-position-y: 80%;
+}
+
+.equpment-images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
+  width: 400px;
+}
+
+.equipment-card-img-1 {
+  background-image: url(./images/Brewing-equipment/WakeCupMochaPot.jpg);
+}
+
+.equipment-card-img-2 {
+  background-image: url(./images/Brewing-equipment/WakeCupCafePress.jpg);
+}
+
+.equipment-card-img-3 {
+  background-image: url(./images/Brewing-equipment/WakeCupColdBrewCoffeePot.jpg);
+}
+
+.equipment-card-img-4 {
+  background-image: url(./images/Brewing-equipment/WakeCupCoffeeGrinder.jpg);
+}
+
+.equpment-cost {
+  margin-right: 1rem;
+}
+
+/* learn with us */
+
+.learn-withus-content {
+  margin: 0 7%;
+}
+.LearnWithUs-img {
+  background-image: url(./images/learnWithUs.jpg);
+  background-position: bottom center;
+}
+
+.workshops {
+  margin: 0 3%;
+  background-color: var(--secondrey-color);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.workshop-title {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.workshop-desc {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.workshops span {
+  font-size: 1.3rem;
+}
+
+.workshops button {
+  padding: 0.4rem 3rem;
+  margin: 0 0.5rem;
+  background-color: #453e34;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.workshops button:hover {
+  background-color: var(--light-color);
+}
+
+/* about us */
+
+.aboutus-headline h1 {
+  margin-top: 1rem;
+
+  text-align: center;
+}
+.AboutUs-img {
+  background-image: url(./images/aboutus.jpg);
+  background-position: top right;
+}
+
+/* contact us */
+
+.main-content {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.Contact-img {
+  background-image: url(./images/contactUs.jpg);
+  background-position-y: 40%;
+}
+
+.main-content form {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  width: 43%;
+  transition: all 0.5s ease-in;
+}
+
+.main-content form:hover {
+  transform: scale(0.95);
+}
+
+.main-content table {
+  padding: 1rem;
+}
+
+.main-content tr {
+  margin-right: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  padding: 0.4rem;
+
+  margin-right: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2px;
+}
+
+.main-content button {
+  padding: 0.4rem 3rem;
+  margin: 0;
+  background-color: #453e34;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease-in;
+}
+
+.main-content button:hover {
+  background-color: var(--light-color);
+}
+
+/* tablets */
+@media all and (max-width: 820px) {
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  .main-section .the-source,
+  .main-section .ourcafe {
+    font-size: 1.5rem;
+    height: 50vh;
+  }
+
+  /* contact */
+  .main-content form {
+    width: 100%;
+  }
+  .address-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+}
+
+/* phones */
+@media all and (max-width: 600px) {
+  .ourcafe-img,
+  .source-img,
+  .coffee-blends-img,
+  .LearnWithUs-img,
+  .Contact-img,
+  .BrewingEquipment-head-img,
+  .AboutUs-img {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0%;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  .main-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-section .the-source,
+  .main-section .ourcafe {
+    font-size: 1rem;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+
+  /* contact */
+  .main-content form {
+    width: 100%;
+  }
+
+  /* coffee blends */
+  .coffee-blends {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin: 0%;
+  }
+
+  .address-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+}
+
+.footer {
+  /* background-color: var(--light-color); */
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 1.1rem 4%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  background-color: var(--primary-color);
+}
+
+.footer .right-footer i {
+  margin: 1rem;
+  transition: all 0.5s ease-in;
+}
+
+.footer .right-footer i:hover {
+  transform: scale(0.95);
+  color: var(--light-color);
+}
